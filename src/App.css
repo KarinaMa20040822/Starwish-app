@@ -1,38 +1,100 @@
-.App {
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mb-20 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mt-20 {
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3ff;
+  font-family: "Noto Sans TC", sans-serif;
+  height: 100%;
+}
+
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  border-radius: 24px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #7e22ce;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.label {
+  font-size: 14px;
+  color: #6b21a8;
+  margin-top: 16px;
+  display: block;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #d8b4fe;
+  border-radius: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+.button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 14px;
+  background-color: #9333ea;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+  background-color: #7e22ce;
 }
