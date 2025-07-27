@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ShoppingApp.css';
+import { Settings } from 'lucide-react';
 
 const ShoppingApp = () => {
   const [activeCategory, setActiveCategory] = useState('全部');
@@ -100,14 +101,19 @@ const ShoppingApp = () => {
   };
 
   return (
-    <div className="shopping-app-container">
-      <div className="shopping-card">
+    <div className="shopping-app-wrapper">
+      <div className="shopping-container">
         <div className="shopping-header">
-          <h2 className="shopping-title">星願指引</h2>
+          <h1 className="shopping-title">星願指引</h1>
+          <Settings className="settings-icon" />
         </div>
 
-        <div className="shopping-content">
-          <div className="shopping-page-content">
+        <div className="shopping-main">
+          <div className="page-title">
+            <h2>幸運小物商城</h2>
+          </div>
+
+          <div className="shopping-content">
             <div className="hero-section">
               <div className="hero-card">
                 <div className="hero-text">
@@ -144,7 +150,7 @@ const ShoppingApp = () => {
               </div>
             </div>
 
-            <div className="featured-section">
+            <div className="section">
               <div className="section-header">
                 <span className="vip-badge">VIP</span>
                 <h4>處女座本月幸運物</h4>
@@ -199,6 +205,15 @@ const ShoppingApp = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="shopping-footer">© 2025 星願指引 | 版權所有</div>
+        <div className="shopping-bottom-nav">
+          {[1,2,3,4,5].map(i => (
+            <div key={i} className="shopping-nav-icon">
+              <div className="shopping-nav-dot"></div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

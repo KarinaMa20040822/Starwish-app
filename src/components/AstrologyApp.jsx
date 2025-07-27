@@ -31,7 +31,7 @@ const AstrologyApp = () => {
       <div className="main">
         <div className="intro">
           <h2 className="intro-title">尚未登入</h2>
-          <p className="intro-subtitle">請登入會員帳號或使用訪客登入功能</p>
+          <p className="intro-subtitle">請登入或註冊以使用完整功能</p>
         </div>
         <div className="form-section">
           <div>

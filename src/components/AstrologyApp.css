@@ -1,66 +1,318 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f5f3ff; 
-    height: 100vh;
-    font-family: "Noto Sans TC", sans-serif;
-    padding-top: 40px;
-  }
-  
-  .title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: #6b21a8;
-  }
-  
-  .form {
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 320px;
-  }
-  
-  .label {
-    font-size: 16px;
-    font-weight: 600;
-    color: #6b21a8;
-    margin-top: 15px;
-  }
-  
-  .input,
-  .select {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #d8b4fe;
-    border-radius: 10px;
-    margin-top: 8px;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-  
-  .input:focus,
-  .select:focus {
-    border-color: #a855f7;
-  }
-  
-  .button {
-    background-color: #9333ea;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 25px;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #7e22ce;
-  }
-  
+.app-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #f5f3ff;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f3ff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 16px 20px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6b21a8;
+  margin: 0;
+  text-align: center;
+}
+
+.icon {
+  color: #6b21a8;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6b21a8;
+  margin: 0 0 8px 0;
+}
+
+.intro-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.form-section {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+.form-section > div {
+  margin-bottom: 16px;
+}
+
+.form-section > div:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #a855f7;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.forgot-password {
+  text-align: right;
+  margin: 12px 0;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  color: #6b21a8;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #9333ea;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 8px;
+}
+
+.login-button:hover {
+  background-color: #7e22ce;
+}
+
+.register-button {
+  width: 100%;
+  background-color: transparent;
+  color: #9333ea;
+  padding: 14px;
+  border: 2px solid #9333ea;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 12px;
+}
+
+.register-button:hover {
+  background-color: #9333ea;
+  color: white;
+}
+
+.alt-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.alt-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.icon-group {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.icon-button:hover {
+  transform: scale(1.05);
+}
+
+.icon-button.fb {
+  background-color: #1877f2;
+  color: white;
+}
+
+.icon-button.line {
+  background-color: #00c300;
+  color: white;
+}
+
+.icon-button.google {
+  background-color: #ea4335;
+  color: white;
+  font-weight: bold;
+}
+
+.icon-inner {
+  width: 20px;
+  height: 20px;
+}
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.terms-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #6b21a8;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.ml-1 {
+  margin-left: 4px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin: 20px 0 10px 0;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #a855f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
