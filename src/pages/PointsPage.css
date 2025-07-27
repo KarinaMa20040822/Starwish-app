@@ -1,0 +1,205 @@
+/* PointsPage.css */
+
+.points-page {
+  background: linear-gradient(180deg, #F2EAFE 0%, #FDFBFF 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 80px;
+}
+
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6B4EFF;
+  margin: 0 auto;
+}
+
+.points-summary {
+  margin: 20px;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.points-summary .left img {
+  height: 80px;
+}
+
+.right {
+  background: white;
+  padding: 30px 60px;
+  border-radius: 16px;
+}
+
+.points-summary .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.points-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6B4EFF;
+}
+
+.points-label {
+  font-size: 14px;
+  color: #999;
+}
+
+.section {
+  margin: 16px;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.points-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.points-card .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.points-card .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.points-card .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.points-card .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.points-card .subtitle {
+  font-size: 13px;
+  color: #666;
+}
+
+.points-card .value {
+  font-size: 16px;
+  color: #00C851;
+  font-weight: bold;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.stat-item {
+  flex: 1;
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  justify-content: space-between;
+}
+
+.stat-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #FF8C00;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6B4EFF;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #666;
+}
+
+.usage-box {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.usage-icon {
+  font-size: 22px;
+  color: #FFB800;
+}
+
+.usage-points {
+  font-size: 40px;
+  color: #ae82ef;
+  font-weight: bold;
+}
+
+.usage-text {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 64px;
+  background: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav .icon {
+  width: 24px;
+  height: 24px;
+  color: #aaa;
+}
+
+.bottom-nav .active {
+  color: #6B4EFF;
+}
