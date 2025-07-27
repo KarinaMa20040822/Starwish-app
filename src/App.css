@@ -98,3 +98,62 @@ body, html {
 .button:hover {
   background-color: #7e22ce;
 }
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 20px 30px 20px;
+  z-index: 1000;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  min-width: 80px;
+}
+
+.nav-btn:hover {
+  background: rgba(147, 51, 234, 0.1);
+}
+
+.nav-btn.active {
+  background: rgba(147, 51, 234, 0.15);
+}
+
+.nav-icon {
+  font-size: 24px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.nav-text {
+  font-size: 12px;
+  color: #6b21a8;
+  font-weight: 500;
+}
+
+.nav-btn.active .nav-text {
+  color: #7e22ce;
+  font-weight: 600;
+}
