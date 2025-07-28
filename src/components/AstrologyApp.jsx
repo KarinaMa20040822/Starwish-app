@@ -142,22 +142,22 @@ const AstrologyApp = () => {
               className="select"
             >
               <option value="">請選擇您的MBTI類型</option>
-              <option value="INTJ">INTJ - 建築師</option>
-              <option value="INTP">INTP - 思想家</option>
+              <option value="INTJ">INTJ - 架構師</option>
+              <option value="INTP">INTP - 邏輯學家</option>
               <option value="ENTJ">ENTJ - 指揮官</option>
               <option value="ENTP">ENTP - 辯論家</option>
               <option value="INFJ">INFJ - 提倡者</option>
               <option value="INFP">INFP - 調停者</option>
               <option value="ENFJ">ENFJ - 主人公</option>
-              <option value="ENFP">ENFP - 競選者</option>
+              <option value="ENFP">ENFP - 活動家</option>
               <option value="ISTJ">ISTJ - 物流師</option>
               <option value="ISFJ">ISFJ - 守護者</option>
-              <option value="ESTJ">ESTJ - 總經理</option>
+              <option value="ESTJ">ESTJ - 管理者</option>
               <option value="ESFJ">ESFJ - 執政官</option>
               <option value="ISTP">ISTP - 鑑賞家</option>
-              <option value="ISFP">ISFP - 探險家</option>
+              <option value="ISFP">ISFP - 冒險家</option>
               <option value="ESTP">ESTP - 企業家</option>
-              <option value="ESFP">ESFP - 娛樂家</option>
+              <option value="ESFP">ESFP - 表演者</option>
             </select>
           </div>
           <div>
