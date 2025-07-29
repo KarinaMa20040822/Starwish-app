@@ -1,133 +1,102 @@
-import React, { useState } from 'react';
-import { ArrowLeft, Settings, Search, MessageCircle, Zap, Home, Calendar, User } from 'lucide-react';
+import React from 'react';
 import './HistoryPage.css';
+import searchIcon from '../pic/search.png';
 
-const DivinationHistory = () => {
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const handleSearch = (e) => {
-    setSearchQuery(e.target.value);
-  };
-
+function DivinationHistory() {
   return (
-    <div className="divination-container">
-      {/* Header */}
+    <div className="history-page">
       <div className="header">
-        <div className="header-content">
-          <ArrowLeft className="header-icon" />
-          <h1 className="header-title">占卜歷史</h1>
-          <Settings className="header-icon" />
-        </div>
+        <div className="back">&#8592;</div>
+        <h1 className="title">占卜歷史</h1>
+        <div className="setting">&#9881;</div>
       </div>
 
-      {/* Search Bar */}
-      <div className="search-container">
-        <div className="search-wrapper">
-          <Search className="search-icon" />
-          <input
-            type="text"
-            placeholder="搜尋運勢的好結果..."
-            value={searchQuery}
-            onChange={handleSearch}
-            className="search-input"
-          />
-        </div>
+      <div className="search-bar">
+        <img src={searchIcon} alt="search" className="search-icon" />
+        <input type="text" placeholder="搜尋運勢記錄..." />
       </div>
 
-      {/* History List */}
-      <div className="history-container">
-        <div className="history-item">
-          <div className="history-header">
-            <h3 className="history-title">塔羅牌解讀</h3>
-            <span className="history-date">今天 14:32</span>
+      <div className="record-list">
+        <div className="record-card">
+          <div className="record-header">
+            <span className="record-title">感情運勢諮詢</span>
+            <span className="record-time">今天 14:32</span>
           </div>
-          <p className="history-content">
-            為什麼天蠍座已讓不起到的問題呈現？經期的愛，蓋娃是心小鴨好......力量牌
-          </p>
-          <div className="tags-container">
-            <span className="tag">愛情</span>
-            <span className="tag">塔羅牌</span>
+          <div className="record-content">
+            為什麼水瓶男總是不回我的訊息！抽到的牌：高級女祭司、權杖王牌、力量牌⋯⋯
+          </div>
+          <div className="record-tags">
+            <span>感情</span><span>塔羅牌</span>
           </div>
         </div>
 
-        <div className="history-item">
-          <div className="history-header">
-            <h3 className="history-title">專業諮詢解析</h3>
-            <span className="history-date">今天 14:15</span>
+        <div className="record-card">
+          <div className="record-header">
+            <span className="record-title">事業發展指引</span>
+            <span className="record-time">昨天 16:45</span>
           </div>
-          <p className="history-content">
-            深今天的占卜結果，你了解的感情分析關於，認為與結的是......認到的幸福
-          </p>
+          <div className="record-content">
+            最近工作上遇到一些困難，抽了新未來的發展方向。抽到的牌：皇皇、聖杯騎士、聖杯國王⋯⋯
+          </div>
+          <div className="record-tags">
+            <span>事業</span><span>塔羅牌</span>
+          </div>
         </div>
 
-        <div className="history-item">
-          <div className="history-header">
-            <h3 className="history-title">靈體運勢分析</h3>
-            <span className="history-date">今天 13:45</span>
+        <div className="record-card">
+          <div className="record-header">
+            <span className="record-title">健康運勢分析</span>
+            <span className="record-time">昨天 19:30</span>
           </div>
-          <p className="history-content">
-            為了讓你更好地理解這理期情況的分析結果，你理解這個預測的背景......
-          </p>
+          <div className="record-content">
+            早上起床覺得有點疲憊，就想看看健康狀況如何。抽到的牌：世界、命運之輪、太陽⋯⋯
+          </div>
+          <div className="record-tags">
+            <span>健康</span><span>解籤</span>
+          </div>
         </div>
 
-        <div className="history-item">
-          <div className="history-header">
-            <h3 className="history-title">財運測算</h3>
-            <span className="history-date">今天 11:15</span>
+        <div className="record-card">
+          <div className="record-header">
+            <span className="record-title">財運預測</span>
+            <span className="record-time">二週前 11:15</span>
           </div>
-          <p className="history-content">
-            預測這這則對於遠程調整剛擁軟弱況，臨時可能......這個周......
-          </p>
+          <div className="record-content">
+            想知道近期的投資運勢和財務狀況。抽到的牌：錢幣十、太陽、命運之輪⋯⋯
+          </div>
+          <div className="record-tags">
+            <span>財運</span><span>塔羅牌</span>
+          </div>
         </div>
 
-        <div className="history-item">
-          <div className="history-header">
-            <h3 className="history-title">人際關係指導</h3>
-            <span className="history-date">今天 10:45</span>
+        <div className="record-card">
+          <div className="record-header">
+            <span className="record-title">人際關係指導</span>
+            <span className="record-time">昨天 16:45</span>
           </div>
-          <p className="history-content">
-            由於支配你是期結束這算結果，對了難以開始接觸......
-          </p>
+          <div className="record-content">
+            和朋友之間出現了一些誤會，抽了解如何改善關係。根據你的MBTI類型INFJ⋯⋯
+          </div>
+          <div className="record-tags">
+            <span>人際關係</span><span>MBTI</span>
+          </div>
         </div>
 
-        <div className="history-item">
-          <div className="history-header">
-            <h3 className="history-title">月運勢解讀</h3>
-            <span className="history-date">今天 10:45</span>
+        <div className="record-card">
+          <div className="record-header">
+            <span className="record-title">月運勢總覽</span>
+            <span className="record-time">昨天 16:45</span>
           </div>
-          <p className="history-content">
-            今天星座運勢運氣是總結算的分析，讓支配運這是體分錄資料......
-          </p>
-        </div>
-      </div>
-
-      {/* Bottom Navigation */}
-      <div className="bottom-nav">
-        <div className="nav-container">
-          <div className="nav-item active">
-            <MessageCircle className="nav-icon" />
-            <span className="nav-text">占卜</span>
+          <div className="record-content">
+            想了解這個月整體運勢如何，感受好像會有很明顯不同的轉折與挑戰，特別是在工作方面⋯⋯
           </div>
-          <div className="nav-item">
-            <Zap className="nav-icon" />
-            <span className="nav-text">AI</span>
-          </div>
-          <div className="nav-item">
-            <Home className="nav-icon" />
-            <span className="nav-text">首頁</span>
-          </div>
-          <div className="nav-item">
-            <Calendar className="nav-icon" />
-            <span className="nav-text">運勢</span>
-          </div>
-          <div className="nav-item">
-            <User className="nav-icon" />
-            <span className="nav-text">我的</span>
+          <div className="record-tags">
+            <span>整體運</span><span>塔羅牌</span>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default DivinationHistory;

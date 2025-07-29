@@ -5,7 +5,9 @@ function PointsPage() {
   return (
     <div className="points-page">
       <div className="header">
-        <h1>我的積分</h1>
+        <div className="back">&#8592;</div>
+        <h1 className="title">我的積分</h1>
+        <div className="setting">&#9881;</div>
       </div>
 
       <div className="points-summary">

@@ -1,6 +1,5 @@
 import React from 'react';
 import './FavoritesPage.css';
-import settingIcon from '../pic/setting.png';
 import searchIcon from '../pic/search.png';
 
 
@@ -9,11 +8,9 @@ function FavoritePostsPage() {
   return (
     <div className="favorite-page">
       <div className="header">
-        <div className="left-space" />
-        <h1 className="header-title">收藏紀錄</h1>
-        <div className="gear">
-          <img src={settingIcon} alt="avatar" className="setting-icon" />
-        </div>
+        <div className="back">&#8592;</div>
+        <h1 className="title">收藏紀錄</h1>
+        <div className="setting">&#9881;</div>
       </div>
 
     <div className="search-bar">

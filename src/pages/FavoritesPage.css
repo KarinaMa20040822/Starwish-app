@@ -8,14 +8,13 @@
 }
 
 .header {
-  position: relative;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 56px;
-  padding: 0 16px;
-  background: white;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  padding: 1rem;
 }
 
 .header-title {
@@ -29,8 +28,7 @@
 }
 
 .gear .setting-icon {
-  width: 45px;
-  height: 60px;
+font-size: 1.25rem;
 }
 
 .left-space {
@@ -57,9 +55,7 @@
   align-items: center;
   gap: 15px;
   background: white;
-  margin: 20px;
   border-radius: 50px;
-  padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   position: relative; /* 確保裡面內容不會跳出去 */
 }
@@ -92,11 +88,15 @@
   margin: 0 16px 12px;
 }
 
+.post-list {
+padding: 20px;
+}
+
 .post-card {
   background: white;
   margin: 0 16px 12px;
   border-radius: 12px;
-  padding: 12px;
+  padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
