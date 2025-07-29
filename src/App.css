@@ -1,4 +1,3 @@
-
 a {
   color: inherit;
   text-decoration: none;
@@ -8,13 +7,11 @@ button {
   font-family: inherit;
 }
 
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .text-center {
   text-align: center;
@@ -58,19 +55,19 @@ body, html {
 .title {
   font-size: 24px;
   font-weight: bold;
-  color: #7e22ce;
+  /*color: #7e22ce;*/
   margin-bottom: 24px;
   text-align: center;
 }
 
 .label {
   font-size: 14px;
-  color: #6b21a8;
+  /*color: #6b21a8;*/
   margin-top: 16px;
   display: block;
 }
 
-.input, .select {
+/*.input, .select {
   width: 100%;
   padding: 12px;
   margin-top: 8px;
@@ -79,14 +76,14 @@ body, html {
   font-size: 16px;
   box-sizing: border-box;
   background-color: #fafafa;
-}
+}*/
 
 .button {
   margin-top: 24px;
   width: 100%;
   padding: 14px;
-  background-color: #9333ea;
-  color: white;
+  /*background-color: #9333ea;*/
+  /*color: white;*/
   font-size: 16px;
   font-weight: bold;
   border: none;
@@ -96,7 +93,7 @@ body, html {
 }
 
 .button:hover {
-  background-color: #7e22ce;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .App {
@@ -107,53 +104,92 @@ body, html {
 .app-navigation {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgb(165, 135, 226);
+  padding: 10px 0;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/*.nav-icon {
+  width: 36px;
+  height: 36px;
+}*/
+
+.nav-btn img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.nav-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.6); /* 半透明白底 */
+  border-radius: 50%; /* 圓形 */
+  padding: 6px;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 10px 20px 30px 20px;
-  z-index: 1000;
+  align-items: center;
+  width: 44px; /* 圓形容器尺寸 */
 }
 
 .nav-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: none;
+  background: transparent; /* 移除背景 */
   border: none;
+  outline: none;
+  padding: 0; /* 移除按鈕內邊距 */
   cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  min-width: 80px;
+  border-radius: 50%; /* 按鈕形狀圓形 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px; /* 與 nav-icon-wrapper 大小一致 */
+  height: 44px;
 }
 
-.nav-btn:hover {
-  background: rgba(147, 51, 234, 0.1);
+/* 響應式設計 */
+@media (max-width: 480px) {
+  .app-navigation {
+    /*max-width: 320px;*/
+    padding: 10px 16px;
+    gap: 6px;
+  }
+  
+  /*.nav-btn {
+    min-width: 40px;
+    height: 40px;
+    padding: 6px 10px;
+  }*/
+  
+  /*.nav-icon {
+    font-size: 18px;
+  }*/
+  
+  .nav-text {
+    font-size: 9px;
+  }
 }
 
-.nav-btn.active {
-  background: rgba(147, 51, 234, 0.15);
-}
-
-.nav-icon {
-  font-size: 24px;
-  margin-bottom: 4px;
-  display: block;
-}
-
-.nav-text {
-  font-size: 12px;
-  color: #6b21a8;
-  font-weight: 500;
-}
-
-.nav-btn.active .nav-text {
-  color: #7e22ce;
-  font-weight: 600;
+@media (min-width: 768px) {
+  .app-navigation {
+    /*max-width: 400px;*/
+    padding: 14px 24px;
+    gap: 10px;
+  }
+  
+  /*.nav-btn {
+    min-width: 48px;
+    height: 48px;
+    padding: 10px 14px;
+  }*/
+  
+  /*.nav-icon {
+    font-size: 22px;
+  }*/
+  
+  .nav-text {
+    font-size: 11px;
+  }
 }

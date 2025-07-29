@@ -84,11 +84,7 @@ const AstrologyApp = () => {
         </div>
       </div>
       <div className="footer">© 2025 星願指引 | 版權所有</div>
-      <div className="bottom-nav">
-        {[1,2,3,4,5].map(i => (
-          <div key={i} className="nav-icon"><div className="nav-dot"></div></div>
-        ))}
-      </div>
+
     </div>
   );
 
@@ -221,11 +217,7 @@ const AstrologyApp = () => {
         </div>
       </div>
       <div className="footer">© 2025 星願指引 | 版權所有</div>
-      <div className="bottom-nav">
-        {[1,2,3,4,5].map(i => (
-          <div key={i} className="nav-icon"><div className="nav-dot"></div></div>
-        ))}
-      </div>
+
     </div>
   );
 

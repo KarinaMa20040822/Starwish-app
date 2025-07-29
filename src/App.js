@@ -5,7 +5,7 @@ import Stakeholders from "./components/Stakeholders";
 import "./App.css";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("astrology"); // 'astrology' 或 'shopping'
+  const [currentPage, setCurrentPage] = useState("astrology");
 
   const renderPage = () => {
     switch (currentPage) {
@@ -15,33 +15,39 @@ function App() {
         return <ShoppingApp />;
       case "stakeholders":
         return <Stakeholders />;
+      case "home":
+        return <AstrologyApp />;
+      case "card":
+        return <AstrologyApp />;
       default:
         return <AstrologyApp />;
     }
   };
 
+  const navItems = [
+    { key: "card", img: "/icon/card.png", activeImg: "/activeicon/card1.png" },
+    { key: "stakeholders", img: "/icon/group.png", activeImg: "/activeicon/team1.png" },
+    { key: "home", img: "/icon/home.png", activeImg: "/activeicon/home1.png" },
+    { key: "shopping", img: "/icon/shopping.png", activeImg: "/activeicon/shopping1.png" },
+    { key: "astrology", img: "/icon/user.png", activeImg: "/activeicon/user1.png" },
+  ];
+
   return (
     <div className="App">
-      {/* 頁面內容 */}
       {renderPage()}
 
-      {/* 導覽列 */}
       <div className="app-navigation">
-        <button className={`nav-btn ${currentPage === "astrology" ? "active" : ""}`} onClick={() => setCurrentPage("astrology")}>
-          <span className="nav-icon">🔮</span>
-          <span className="nav-text">占星</span>
-        </button>
-        <button className={`nav-btn ${currentPage === "shopping" ? "active" : ""}`} onClick={() => setCurrentPage("shopping")}>
-          <span className="nav-icon">🛍️</span>
-          <span className="nav-text">購物</span>
-        </button>
-        <button
-          className={`nav-btn ${currentPage === "stakeholders" ? "active" : ""}`}
-          onClick={() => setCurrentPage("stakeholders")}
-        >
-          <span className="nav-icon">✨</span>
-          <span className="nav-text">運勢</span>
-        </button>
+        {navItems.map((item) => (
+          <button
+            key={item.key}
+            className={`nav-btn ${currentPage === item.key ? "active" : ""}`}
+            onClick={() => setCurrentPage(item.key)}
+          >
+            <div className="nav-icon-wrapper">
+              <img src={currentPage === item.key ? item.activeImg : item.img} alt={item.key} className="nav-icon" />
+            </div>
+          </button>
+        ))}
       </div>
     </div>
   );
