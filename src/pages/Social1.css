@@ -1,0 +1,208 @@
+/* Social1.css */
+
+.social1-container {
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 80px;
+  background-color: #e9d5ff;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.social-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e9d5ff;
+}
+
+.icon-setting {
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.25rem;
+  color: #6b21a8;
+  cursor: pointer;
+}
+
+/* Search Bar */
+.social-search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 1rem;
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+}
+
+.social-search input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.search-icon {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  opacity: 0.6;
+  color: #6b21a8;
+}
+
+/* Tabs */
+.social-tabs {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.875rem;
+  color: white;
+  border-bottom: 1px solid #ddd6fe;
+  padding-bottom: 0.5rem;
+  background-color: white;
+}
+
+.tab {
+  padding: 0.5rem;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  color: #a78bfa;
+}
+
+.tab.active {
+  font-weight: 700;
+  color: #6b21a8;
+  border-bottom: 2px solid #6b21a8;
+}
+
+/* Post Card */
+.post-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.username {
+  font-weight: 600;
+  color: #4c1d95;
+  font-size: 0.9rem;
+}
+
+.post-time {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.post-content {
+  font-size: 0.875rem;
+  color: #1f2937;
+  margin: 0.5rem 0;
+}
+
+.post-footer {
+  font-size: 0.75rem;
+  color: #6b7280;
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Hot Topics Section */
+.hot-topics-section {
+  background-color: #f5e8ff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.hot-topics-title {
+  font-weight: bold;
+  color: #6b21a8;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.hot-topics-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hot-topic {
+  background-color: #a78bfa;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.hot-topic:hover {
+  background-color: #6b21a8;
+}
+
+/* Floating Add Button */
+.add-button {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #9333ea;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 9999px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 20;
+  cursor: pointer;
+}
+
+/* Bottom Navigation (if needed) */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(147, 51, 234, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 10;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6b21a8;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  opacity: 0.9;
+}
+
+.nav-item.active {
+  font-weight: bold;
+  color: #6b21a8;
+}

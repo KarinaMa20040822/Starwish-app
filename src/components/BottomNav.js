@@ -8,8 +8,9 @@ const BottomNav = () => {
     { label: "首頁", path: "/favorites", icon: "🏠" },
     { label: "積分", path: "/points", icon: "⭐" },
     { label: "歷史", path: "/history", icon: "📜" },
-    { label: "其他", path: "#", icon: "🧙‍♀️" },
-    { label: "我", path: "#", icon: "👤" },
+    { label: "星願社群1", path: "/social1", icon: "🧙‍♀️" },
+    { label: "星願社群2", path: "/social2", icon: "👤" },
+    { label: "星願社群3", path: "/social3", icon: "👤" },
   ];
 
   return (

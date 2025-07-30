@@ -60,12 +60,6 @@ function FavoritePostsPage() {
         </div>
       </div>
 
-      <div className="bottom-nav">
-        <div className="icon">🏠</div>
-        <div className="icon">👥</div>
-        <div className="icon active">📁</div>
-        <div className="icon">📨</div>
-      </div>
     </div>
   );
 }

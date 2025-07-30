@@ -1,0 +1,184 @@
+/* Social2.css */
+
+.social2-container {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding-bottom: 90px;
+  background-color: #e9d5ff;
+}
+
+/* Header */
+.social2-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.social2-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6b21a8;
+}
+
+.icon-setting {
+  position: absolute;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  color: #6b21a8;
+  cursor: pointer;
+}
+
+.back-btn {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  color: #6b21a8;
+  cursor: pointer;
+}
+
+/* Post Card */
+.social2-post-card {
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  margin-right: 0.75rem;
+}
+
+.post-info {
+  flex: 1;
+}
+
+.username {
+  font-weight: bold;
+  color: #4c1d95;
+  font-size: 0.9rem;
+}
+
+.post-time {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.follow-btn {
+  background-color: #6b21a8;
+  color: white;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+.post-content {
+  font-size: 0.875rem;
+  color: #1f2937;
+  margin: 0.5rem 0;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.post-footer {
+  font-size: 0.75rem;
+  color: #6b7280;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Comments */
+.comment-section {
+  border-top: 1px solid #e9d5ff;
+  padding-top: 0.75rem;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.comment-user {
+  font-weight: 600;
+  color: #6b21a8;
+  font-size: 0.85rem;
+}
+
+.comment-text {
+  font-size: 0.8rem;
+  color: #1f2937;
+}
+
+.comment-time {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+/* Input */
+.comment-input {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f3e8ff;
+  border-top: 1px solid #ddd6fe;
+  position: fixed;
+  bottom: 60px; /* 預留底部導覽列高度 */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; /* 重點：避免超出寬度 */
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  background: white;
+}
+
+
+.send-btn {
+  background-color: #9333ea;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+

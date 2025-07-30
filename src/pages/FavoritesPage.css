@@ -89,14 +89,12 @@ font-size: 1.25rem;
 }
 
 .post-list {
-padding: 20px;
+padding: 0 20px;
 }
 
 .post-card {
   background: white;
-  margin: 0 16px 12px;
   border-radius: 12px;
-  padding: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
 }
 
