@@ -8,15 +8,6 @@
 }
 
 /* Header */
-.social2-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 1rem;
-  background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 
 .social2-title {
   font-size: 1.25rem;
